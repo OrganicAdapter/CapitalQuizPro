@@ -1,0 +1,25 @@
+﻿<Application
+    x:Class="CapitalQuiz.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:CapitalQuiz"
+    xmlns:Injection="using:CapitalQuiz.Injection"
+    xmlns:LocalConverters="using:CapitalQuiz.Converters"
+    xmlns:Converters="using:UniversalExtensions.Converters">
+
+    <Application.Resources>
+        <ResourceDictionary>
+            <Injection:InjectionService x:Key="Locator" />
+            <Converters:BooleanVisibilityConverter x:Key="BooleanVisibilityConverter" />
+            <Converters:BooleanVisibilityNegationConverter x:Key="BooleanVisibilityNegationConverter" />
+            <Converters:BooleanNegationConverter x:Key="BooleanNegationConverter" />
+            
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Dictionaries/ListDictionary.xaml" />
+                <ResourceDictionary Source="Dictionaries/ContainerDictionary.xaml" />
+                <ResourceDictionary Source="Dictionaries/TextDictionary.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+    
+</Application>

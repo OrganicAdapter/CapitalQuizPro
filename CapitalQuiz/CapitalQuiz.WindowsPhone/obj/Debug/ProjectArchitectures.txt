@@ -1,0 +1,4 @@
+D:\SoftIT\CapitalQuizPro\CapitalQuiz\CapitalQuiz.WindowsPhone\CapitalQuiz.WindowsPhone.csproj;neutral
+D:\SoftIT\CapitalQuizPro\CapitalQuizPro\CapitalQuizPro.csproj;neutral
+d:\SoftIT\UniversalExtensions\UniversalExtensions.csproj;neutral
+D:\SoftIT\UniversalExtensions\UniversalExtensions.csproj;neutral
