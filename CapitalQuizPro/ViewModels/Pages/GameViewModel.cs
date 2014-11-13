@@ -20,6 +20,9 @@ namespace CapitalQuizPro.ViewModels.Pages
 
         private readonly IGameService _gameService;
         private readonly INavigationService _navigationService;
+        private readonly IPlayerService _playerService;
+
+        public const int MAXIMUM_TIME = 30;
 
         #endregion //Fields
 
@@ -66,6 +69,7 @@ namespace CapitalQuizPro.ViewModels.Pages
 
 
         private DispatcherTimer Timer { get; set; }
+        public int QuestionNumber { get; set; }
 
 
         public RelayCommand Init { get; set; }
@@ -76,10 +80,11 @@ namespace CapitalQuizPro.ViewModels.Pages
 
         #region Constructor
 
-        public GameViewModel(IGameService gameService, INavigationService navigationService)
+        public GameViewModel(IGameService gameService, INavigationService navigationService, IPlayerService playerService)
         {
             _gameService = gameService;
             _navigationService = navigationService;
+            _playerService = playerService;
 
             Timer = new DispatcherTimer();
             Timer.Interval = TimeSpan.FromSeconds(1);
@@ -94,13 +99,15 @@ namespace CapitalQuizPro.ViewModels.Pages
 
         #region Methods
 
-        private void ExecuteInit()
+        private async void ExecuteInit()
         {
             //Init player values
             IsAlive = true;
+            Player = PlayerConnector.ConvertToViewModel(await _playerService.GetPlayer(), await _playerService.GetPlayerValues());
 
             //Init game values
             Question = null;
+            QuestionNumber = 1;
 
             //Init and start the timer
             Time = 3;
@@ -118,14 +125,14 @@ namespace CapitalQuizPro.ViewModels.Pages
                 {
                     //Start the game
                     IsCountbackVisible = false;
-                    Time = 30;
+                    Time = MAXIMUM_TIME;
                     GetQuestion();
                 }
                 else
                 {
                     //Fail the game
                     IsAlive = false;
-                    _gameService.SetFailed(0, 0);
+                    _gameService.SetFailed(Player.PlayerId, Player.Score);
                 }
             }
         }
@@ -151,10 +158,13 @@ namespace CapitalQuizPro.ViewModels.Pages
         private async void ExecuteSetAnswer(string answer)
         {
             //Set answer and get a new question, or finish game
-            if (await _gameService.SetAnswer(0, QuestionConnector.ConvertToModel(Question), answer))
+            if (await _gameService.SetAnswer(Player.PlayerId, QuestionConnector.ConvertToModel(Question), answer, MAXIMUM_TIME - Time))
             {
                 var selected = Question.AllAnswers.Where((x) => x.Text.Equals(answer)).FirstOrDefault();
                 selected.IsGoodAnswer = true;
+
+                Player.Score += (Time * QuestionNumber) / 10;
+                QuestionNumber++;
 
                 GetQuestion();
             }
@@ -169,7 +179,7 @@ namespace CapitalQuizPro.ViewModels.Pages
         {
             //Finish the game
             Timer.Stop();
-            _gameService.SetFinished(0, 0);
+            _gameService.SetFinished(Player.PlayerId, Player.Score);
             _navigationService.Navigate("CapitalQuiz.Pages", "TopListPage", true);
         }
 

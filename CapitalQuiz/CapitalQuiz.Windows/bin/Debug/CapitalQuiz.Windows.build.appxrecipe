@@ -68,11 +68,20 @@
       <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="d:\SoftIT\CapitalQuizPro\CapitalQuiz\CapitalQuiz.Shared\Images\MoneyBackground.png">
+      <PackagePath>Images\MoneyBackground.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="d:\SoftIT\CapitalQuizPro\CapitalQuiz\CapitalQuiz.Windows\bin\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="d:\SoftIT\CapitalQuizPro\CapitalQuiz\CapitalQuiz.Windows\bin\Debug\Controls\GameOverControl.xbf">
       <PackagePath>Controls\GameOverControl.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="d:\SoftIT\CapitalQuizPro\CapitalQuiz\CapitalQuiz.Windows\bin\Debug\Controls\HeaderControl.xbf">
+      <PackagePath>Controls\HeaderControl.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="d:\SoftIT\CapitalQuizPro\CapitalQuiz\CapitalQuiz.Windows\bin\Debug\Dictionaries\ColorsDictionary.xbf">
+      <PackagePath>Dictionaries\ColorsDictionary.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="d:\SoftIT\CapitalQuizPro\CapitalQuiz\CapitalQuiz.Windows\bin\Debug\Dictionaries\ContainerDictionary.xbf">
       <PackagePath>Dictionaries\ContainerDictionary.xbf</PackagePath>

@@ -18,6 +18,7 @@ namespace CapitalQuiz.Injection
             SimpleIoc.Default.Register<ITypeService, TypeService>();
             SimpleIoc.Default.Register<INavigationService, NavigationService>();
             SimpleIoc.Default.Register<ITopListService, SampleTopListService>();
+            SimpleIoc.Default.Register<IPlayerService, SamplePlayerService>();
 
             SimpleIoc.Default.Register<GameViewModel>();
             SimpleIoc.Default.Register<MenuViewModel>();

@@ -59,7 +59,7 @@ namespace CapitalQuizPro.Models.Implementations
             return new Question("What's the capital of " + capital.Country + "?", capital.Name, badanswers);
         }
 
-        public async Task<bool> SetAnswer(int userId, Question question, string answer)
+        public async Task<bool> SetAnswer(int userId, Question question, string answer, int remainingTime)
         {
             if (question.GoodAnswer.Equals(answer))
                 return true;

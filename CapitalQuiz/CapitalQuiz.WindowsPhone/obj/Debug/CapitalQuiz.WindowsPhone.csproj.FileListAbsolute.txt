@@ -86,3 +86,5 @@ d:\SoftIT\CapitalQuizPro\CapitalQuiz\CapitalQuiz.WindowsPhone\obj\Debug\Controls
 d:\SoftIT\CapitalQuizPro\CapitalQuiz\CapitalQuiz.WindowsPhone\obj\Debug\Controls\GameOverControl.xbf
 d:\SoftIT\CapitalQuizPro\CapitalQuiz\CapitalQuiz.WindowsPhone\obj\Debug\Pages\TopListPage.xaml
 d:\SoftIT\CapitalQuizPro\CapitalQuiz\CapitalQuiz.WindowsPhone\obj\Debug\Pages\TopListPage.xbf
+d:\SoftIT\CapitalQuizPro\CapitalQuiz\CapitalQuiz.WindowsPhone\obj\Debug\Controls\HeaderControl.g.i.cs
+d:\SoftIT\CapitalQuizPro\CapitalQuiz\CapitalQuiz.WindowsPhone\obj\Debug\Controls\HeaderControl.g.cs

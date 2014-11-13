@@ -9,4 +9,19 @@
         <Setter Property="HorizontalAlignment" Value="Center" />
     </Style>
     
+    <Style TargetType="TextBlock" x:Key="UserNameTextBlock">
+        <Setter Property="VerticalAlignment" Value="Center" />
+        <Setter Property="Foreground" Value="White" />
+        <Setter Property="FontWeight" Value="Bold" />
+        <Setter Property="FontSize" Value="30" />
+        <Setter Property="Margin" Value="30,0,0,0" />
+    </Style>
+    
+    <Style TargetType="TextBlock" x:Key="MoneyTextBlock">
+        <Setter Property="VerticalAlignment" Value="Center" />
+        <Setter Property="HorizontalAlignment" Value="Center" />
+        <Setter Property="Foreground" Value="White" />
+        <Setter Property="FontSize" Value="30" />
+    </Style>
+     
 </ResourceDictionary>

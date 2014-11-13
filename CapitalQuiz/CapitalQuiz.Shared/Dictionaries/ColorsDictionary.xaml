@@ -1,0 +1,9 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:CapitalQuiz.Dictionaries">
+
+    <SolidColorBrush x:Key="HeaderBackground">#004b6e</SolidColorBrush>
+    <SolidColorBrush x:Key="Background">#00ace7</SolidColorBrush>
+    
+</ResourceDictionary>

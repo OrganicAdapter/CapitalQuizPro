@@ -47,10 +47,13 @@
     <Compile Include="Models\Datas\Question.cs" />
     <Compile Include="Models\Datas\TopListItem.cs" />
     <Compile Include="Models\Implementations\SampleGameService.cs" />
+    <Compile Include="Models\Implementations\SamplePlayerService.cs" />
     <Compile Include="Models\Implementations\SampleTopListService.cs" />
     <Compile Include="Models\Interfaces\IGameService.cs" />
+    <Compile Include="Models\Interfaces\IPlayerService.cs" />
     <Compile Include="Models\Interfaces\ITopListService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModels\Connections\PlayerConnector.cs" />
     <Compile Include="ViewModels\Connections\QuestionConnector.cs" />
     <Compile Include="ViewModels\Connections\TopListConnector.cs" />
     <Compile Include="ViewModels\Datas\AnswerViewModel.cs" />

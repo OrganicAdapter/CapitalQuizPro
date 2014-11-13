@@ -10,7 +10,7 @@ namespace CapitalQuizPro.Models.Interfaces
     public interface IGameService
     {
         Task<Question> GetQuestion();
-        Task<bool> SetAnswer(int userId, Question question, string answer);
+        Task<bool> SetAnswer(int userId, Question question, string answer, int remainingTime);
         void SetFailed(int userId, int score);
         void SetFinished(int userId, int score);
     }

@@ -17,15 +17,27 @@
     </Interactivity:Interaction.Behaviors>
     
     <Grid Style="{StaticResource BackgroundGrid}">
-        <TextBlock Text="{Binding Time}"
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        
+        <Controls:HeaderControl Grid.Row="0" />
+        
+        <TextBlock Grid.Row="1"
+                   Text="{Binding Time}"
                    Visibility="{Binding IsCountbackVisible, Converter={StaticResource BooleanVisibilityConverter}}"
                    Style="{StaticResource CountbackTimerTextBlock}"/>
         
-        <Popup IsOpen="{Binding IsAlive, Converter={StaticResource BooleanNegationConverter}}">
+        <Popup Grid.Row="1"
+               IsOpen="{Binding IsAlive, Converter={StaticResource BooleanNegationConverter}}">
             <Controls:GameOverControl />
         </Popup>
         
-        <Grid Visibility="{Binding IsCountbackVisible, Converter={StaticResource BooleanVisibilityNegationConverter}}">
+        <Grid Grid.Row="1"
+              Visibility="{Binding IsCountbackVisible, Converter={StaticResource BooleanVisibilityNegationConverter}}"
+              Style="{StaticResource CenteredGrid}">
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto" />
                 <RowDefinition Height="Auto" />
@@ -35,33 +47,49 @@
             <TextBlock Grid.Row="0"
                        Text="{Binding Question.Text}" />
             
-            <ListView Grid.Row="1"
-                      ItemsSource="{Binding Question.AllAnswers}"
-                      Style="{StaticResource CenterListView}">
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <Button x:Name="AnswerButton"
-                                Content="{Binding Text}"
-                                Command="{Binding Game.SetAnswer, Source={StaticResource Locator}}" CommandParameter="{Binding Text}"
-                                IsEnabled="{Binding Game.IsAlive, Source={StaticResource Locator}}">
-                            <Interactivity:Interaction.Behaviors>
-                                <Core:DataTriggerBehavior Binding="{Binding IsGoodAnswer}"
-                                                          ComparisonCondition="Equal"
-                                                          Value="true">
-                                    <Core:ChangePropertyAction PropertyName="Background"
-                                                               TargetObject="{Binding ElementName=AnswerButton}"
-                                                               Value="Red" />
-                                </Core:DataTriggerBehavior>
-                            </Interactivity:Interaction.Behaviors>
-                        </Button>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-                <ListView.ItemsPanel>
-                    <ItemsPanelTemplate>
-                        <WrapGrid Style="{StaticResource TwoRowWrapGrid}" />
-                    </ItemsPanelTemplate>
-                </ListView.ItemsPanel>
-            </ListView>
+            <Grid Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                
+                <Button Grid.Column="0" Grid.Row="0"
+                        DataContext="{Binding Question.AllAnswers[0]}"
+                        Content="{Binding Text}"
+                        Command="{Binding Game.SetAnswer, Source={StaticResource Locator}}" CommandParameter="{Binding Text}"
+                        IsEnabled="{Binding Game.IsAlive, Source={StaticResource Locator}}"/>
+                <Button Grid.Column="0" Grid.Row="1"
+                        DataContext="{Binding Question.AllAnswers[1]}"
+                        Content="{Binding Text}"
+                        Command="{Binding Game.SetAnswer, Source={StaticResource Locator}}" CommandParameter="{Binding Text}"
+                        IsEnabled="{Binding Game.IsAlive, Source={StaticResource Locator}}"/>
+
+                <Border Grid.Column="1" Grid.RowSpan="2">
+                    <Interactivity:Interaction.Behaviors>
+                        <Core:EventTriggerBehavior EventName="Tapped">
+                            <Core:InvokeCommandAction Command="{Binding SetFinished}" />
+                        </Core:EventTriggerBehavior>
+                    </Interactivity:Interaction.Behaviors>
+                    
+                    <TextBlock Text="{Binding  Player.Score}" />
+                </Border>
+
+                <Button Grid.Column="2" Grid.Row="0"
+                        DataContext="{Binding Question.AllAnswers[2]}"
+                        Content="{Binding Text}"
+                        Command="{Binding Game.SetAnswer, Source={StaticResource Locator}}" CommandParameter="{Binding Text}"
+                        IsEnabled="{Binding Game.IsAlive, Source={StaticResource Locator}}"/>
+                <Button Grid.Column="2" Grid.Row="1"
+                        DataContext="{Binding Question.AllAnswers[3]}"
+                        Content="{Binding Text}"
+                        Command="{Binding Game.SetAnswer, Source={StaticResource Locator}}" CommandParameter="{Binding Text}"
+                        IsEnabled="{Binding Game.IsAlive, Source={StaticResource Locator}}"/>
+            </Grid>
             
             <ProgressBar Grid.Row="2"
                          Maximum="30"
