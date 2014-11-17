@@ -1,4 +1,7 @@
+Images\BonusBackground.png
 Images\MoneyBackground.png
+Images\QuestionBackground.png
+Images\ScoreBackground.png
 Assets\Logo.scale-100.png
 Assets\SmallLogo.scale-100.png
 Assets\SplashScreen.scale-100.png
@@ -7,6 +10,7 @@ App.xbf
 CapitalQuiz.Windows.xr.xml
 Controls\GameOverControl.xbf
 Controls\HeaderControl.xbf
+Dictionaries\ButtonDictionary.xbf
 Dictionaries\ColorsDictionary.xbf
 Dictionaries\ContainerDictionary.xbf
 Dictionaries\ListDictionary.xbf

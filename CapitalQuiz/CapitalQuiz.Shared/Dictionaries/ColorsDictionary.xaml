@@ -5,5 +5,6 @@
 
     <SolidColorBrush x:Key="HeaderBackground">#004b6e</SolidColorBrush>
     <SolidColorBrush x:Key="Background">#00ace7</SolidColorBrush>
+    <SolidColorBrush x:Key="Blue">#002fd0</SolidColorBrush>
     
 </ResourceDictionary>

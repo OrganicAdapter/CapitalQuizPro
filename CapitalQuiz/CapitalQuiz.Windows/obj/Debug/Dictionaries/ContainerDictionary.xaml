@@ -9,11 +9,16 @@
         <Setter Property="Background" Value="{StaticResource Background}" />
     </Style>
     
+    <Style TargetType="Grid" x:Key="GameAreaGrid">
+        <Setter Property="VerticalAlignment" Value="Stretch" />
+        <Setter Property="HorizontalAlignment" Value="Stretch" />
+    </Style>
+
     <Style TargetType="Grid" x:Key="CenteredGrid">
         <Setter Property="VerticalAlignment" Value="Center" />
         <Setter Property="HorizontalAlignment" Value="Center" />
     </Style>
-    
+
     <Style TargetType="Grid" x:Key="HeaderGrid">
         <Setter Property="Height" Value="100" />
         <Setter Property="Background" Value="{StaticResource HeaderBackground}" />
@@ -31,6 +36,47 @@
         </Setter>
         <Setter Property="Margin" Value="0,0,0,-20" />
     </Style>
-    
+
+    <Style TargetType="Border" x:Key="ScoreContainerBorder">
+        <Setter Property="Margin" Value="20" />
+        <Setter Property="VerticalAlignment" Value="Stretch" />
+        <Setter Property="HorizontalAlignment" Value="Stretch" />
+        <Setter Property="Background">
+            <Setter.Value>
+                <ImageBrush ImageSource="/Images/ScoreBackground.png"
+                            Stretch="Uniform"/>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style TargetType="Border" x:Key="QuestionContainerBorder">
+        <Setter Property="HorizontalAlignment" Value="Stretch" />
+        <Setter Property="Height" Value="170" />
+        <Setter Property="Background">
+            <Setter.Value>
+                <ImageBrush ImageSource="/Images/QuestionBackground.png"
+                            Stretch="Uniform"/>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style TargetType="Border" x:Key="BonusContainerBorder">
+        <Setter Property="HorizontalAlignment" Value="Stretch" />
+        <Setter Property="Height" Value="170" />
+        <Setter Property="Background">
+            <Setter.Value>
+                <ImageBrush ImageSource="/Images/BonusBackground.png"
+                            Stretch="Uniform"/>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style TargetType="Border" x:Key="BlendedBorder">
+        <Setter Property="HorizontalAlignment" Value="Stretch" />
+        <Setter Property="VerticalAlignment" Value="Stretch" />
+        <Setter Property="Background" Value="{StaticResource Background}" />
+        <Setter Property="Opacity" Value="0.7" />
+    </Style>
+
 </ResourceDictionary>
 

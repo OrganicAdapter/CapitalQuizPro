@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <Machine>GERGO</Machine>
-    <WindowsUser>Gergő</WindowsUser>
+    <Machine>GERI-PC</Machine>
+    <WindowsUser>Gergely</WindowsUser>
     <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
     <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
     <PackageArchitecture>neutral</PackageArchitecture>
     <PackageIdentityName>6c02dd96-8819-4f68-9217-3f516c78f0fc</PackageIdentityName>
-    <IntermediateOutputPath>d:\SoftIT\CapitalQuizPro\CapitalQuiz\CapitalQuiz.Windows\obj\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>E:\GitHub\CapitalQuizPro\CapitalQuiz\CapitalQuiz.Windows\obj\Debug\</IntermediateOutputPath>
     <RegisteredManifestChecksum>3F58A0ADFBAF4D988BE9B0A443508673385B723592F00BF2FCBE3DEFB0908C27</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>6c02dd96-8819-4f68-9217-3f516c78f0fc_1.0.0.0_neutral__z5n0ahz353d6r</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>6c02dd96-8819-4f68-9217-3f516c78f0fc_z5n0ahz353d6r!App</RegisteredUserModeAppID>
@@ -17,16 +17,16 @@
     <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="d:\SoftIT\CapitalQuizPro\CapitalQuiz\CapitalQuiz.Windows\bin\Debug\AppxManifest.xml">
+    <AppXManifest Include="E:\GitHub\CapitalQuizPro\CapitalQuiz\CapitalQuiz.Windows\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2014-11-13T21:39:21.520</Modified>
+      <Modified>2014-11-16T21:27:48.999</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="d:\SoftIT\CapitalQuizPro\CapitalQuiz\CapitalQuiz.Windows\bin\Debug\CapitalQuiz.Windows.exe">
+    <AppxPackagedFile Include="E:\GitHub\CapitalQuizPro\CapitalQuiz\CapitalQuiz.Windows\bin\Debug\CapitalQuiz.Windows.exe">
       <PackagePath>CapitalQuiz.Windows.exe</PackagePath>
-      <Modified>2014-11-13T21:47:13.223</Modified>
+      <Modified>2014-11-16T22:45:25.600</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\BehaviorsXamlSDKManaged\12.0\References\CommonConfiguration\Neutral\Microsoft.Xaml.Interactions.dll">
       <PackagePath>Microsoft.Xaml.Interactions.dll</PackagePath>
@@ -36,113 +36,129 @@
       <PackagePath>Microsoft.Xaml.Interactivity.dll</PackagePath>
       <Modified>2014-04-29T12:23:50.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="d:\SoftIT\CapitalQuizPro\CapitalQuizPro\bin\Debug\CapitalQuizPro.dll">
+    <AppxPackagedFile Include="E:\GitHub\CapitalQuizPro\CapitalQuizPro\bin\Debug\CapitalQuizPro.dll">
       <PackagePath>CapitalQuizPro.dll</PackagePath>
-      <Modified>2014-11-13T20:38:21.169</Modified>
+      <Modified>2014-11-16T20:35:15.227</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="d:\SoftIT\CapitalQuizPro\packages\MvvmLightLibs.5.0.2.0\lib\netcore451\GalaSoft.MvvmLight.dll">
+    <AppxPackagedFile Include="E:\GitHub\CapitalQuizPro\packages\MvvmLightLibs.5.0.2.0\lib\netcore451\GalaSoft.MvvmLight.dll">
       <PackagePath>GalaSoft.MvvmLight.dll</PackagePath>
-      <Modified>2014-11-08T16:41:28.376</Modified>
+      <Modified>2014-11-10T21:37:48.746</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="d:\SoftIT\CapitalQuizPro\packages\MvvmLightLibs.5.0.2.0\lib\netcore451\GalaSoft.MvvmLight.Extras.dll">
+    <AppxPackagedFile Include="E:\GitHub\CapitalQuizPro\packages\MvvmLightLibs.5.0.2.0\lib\netcore451\GalaSoft.MvvmLight.Extras.dll">
       <PackagePath>GalaSoft.MvvmLight.Extras.dll</PackagePath>
-      <Modified>2014-11-08T16:41:28.386</Modified>
+      <Modified>2014-11-10T21:37:48.727</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="d:\SoftIT\CapitalQuizPro\packages\MvvmLightLibs.5.0.2.0\lib\netcore451\GalaSoft.MvvmLight.Platform.dll">
+    <AppxPackagedFile Include="E:\GitHub\CapitalQuizPro\packages\MvvmLightLibs.5.0.2.0\lib\netcore451\GalaSoft.MvvmLight.Platform.dll">
       <PackagePath>GalaSoft.MvvmLight.Platform.dll</PackagePath>
-      <Modified>2014-11-08T16:41:28.402</Modified>
+      <Modified>2014-11-10T21:37:48.736</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="d:\SoftIT\CapitalQuizPro\packages\CommonServiceLocator.1.3\lib\portable-net4+sl5+netcore45+wpa81+wp8\Microsoft.Practices.ServiceLocation.dll">
+    <AppxPackagedFile Include="E:\GitHub\CapitalQuizPro\packages\CommonServiceLocator.1.3\lib\portable-net4+sl5+netcore45+wpa81+wp8\Microsoft.Practices.ServiceLocation.dll">
       <PackagePath>Microsoft.Practices.ServiceLocation.dll</PackagePath>
-      <Modified>2014-11-08T16:41:28.023</Modified>
+      <Modified>2014-11-10T21:37:45.067</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="d:\SoftIT\UniversalExtensions\bin\Debug\UniversalExtensions.dll">
+    <AppxPackagedFile Include="E:\GitHub\UniversalExtensions\bin\Debug\UniversalExtensions.dll">
       <PackagePath>UniversalExtensions.dll</PackagePath>
-      <Modified>2014-11-13T15:46:49.644</Modified>
+      <Modified>2014-11-16T20:28:58.080</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="d:\SoftIT\UniversalExtensions\bin\Debug\Newtonsoft.Json.dll">
+    <AppxPackagedFile Include="E:\GitHub\UniversalExtensions\bin\Debug\Newtonsoft.Json.dll">
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
-      <Modified>2014-08-16T08:19:38.732</Modified>
+      <Modified>2014-08-11T17:53:39.159</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="d:\SoftIT\EgyenlitoUniversal\packages\Microsoft.Net.Http.2.2.22\lib\portable-net45+win8+wpa81\System.Net.Http.Extensions.dll">
+    <AppxPackagedFile Include="E:\GitHub\EgyenlitoUniversal\packages\Microsoft.Net.Http.2.2.22\lib\portable-net45+win8+wpa81\System.Net.Http.Extensions.dll">
       <PackagePath>System.Net.Http.Extensions.dll</PackagePath>
-      <Modified>2014-08-07T16:27:04.456</Modified>
+      <Modified>2014-08-04T18:09:44.413</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="d:\SoftIT\EgyenlitoUniversal\packages\Microsoft.Net.Http.2.2.22\lib\portable-net45+win8+wpa81\System.Net.Http.Primitives.dll">
+    <AppxPackagedFile Include="E:\GitHub\EgyenlitoUniversal\packages\Microsoft.Net.Http.2.2.22\lib\portable-net45+win8+wpa81\System.Net.Http.Primitives.dll">
       <PackagePath>System.Net.Http.Primitives.dll</PackagePath>
-      <Modified>2014-08-07T16:27:04.477</Modified>
+      <Modified>2014-08-04T18:09:44.422</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="d:\SoftIT\CapitalQuizPro\CapitalQuiz\CapitalQuiz.Windows\Assets\Logo.scale-100.png">
+    <AppxPackagedFile Include="E:\GitHub\CapitalQuizPro\CapitalQuiz\CapitalQuiz.Windows\Assets\Logo.scale-100.png">
       <PackagePath>Assets\Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2014-03-14T08:55:28.000</Modified>
+      <Modified>2014-11-10T21:37:43.360</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="d:\SoftIT\CapitalQuizPro\CapitalQuiz\CapitalQuiz.Windows\Assets\SmallLogo.scale-100.png">
+    <AppxPackagedFile Include="E:\GitHub\CapitalQuizPro\CapitalQuiz\CapitalQuiz.Windows\Assets\SmallLogo.scale-100.png">
       <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2014-03-14T08:55:28.000</Modified>
+      <Modified>2014-11-10T21:37:43.360</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="d:\SoftIT\CapitalQuizPro\CapitalQuiz\CapitalQuiz.Windows\Assets\SplashScreen.scale-100.png">
+    <AppxPackagedFile Include="E:\GitHub\CapitalQuizPro\CapitalQuiz\CapitalQuiz.Windows\Assets\SplashScreen.scale-100.png">
       <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2014-03-14T08:55:28.000</Modified>
+      <Modified>2014-11-10T21:37:43.360</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="d:\SoftIT\CapitalQuizPro\CapitalQuiz\CapitalQuiz.Windows\Assets\StoreLogo.scale-100.png">
+    <AppxPackagedFile Include="E:\GitHub\CapitalQuizPro\CapitalQuiz\CapitalQuiz.Windows\Assets\StoreLogo.scale-100.png">
       <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2014-03-14T08:55:28.000</Modified>
+      <Modified>2014-11-10T21:37:43.361</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="d:\SoftIT\CapitalQuizPro\CapitalQuiz\CapitalQuiz.Shared\Images\MoneyBackground.png">
+    <AppxPackagedFile Include="E:\GitHub\CapitalQuizPro\CapitalQuiz\CapitalQuiz.Shared\Images\BonusBackground.png">
+      <PackagePath>Images\BonusBackground.png</PackagePath>
+      <Modified>2014-11-16T21:43:42.498</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\GitHub\CapitalQuizPro\CapitalQuiz\CapitalQuiz.Shared\Images\MoneyBackground.png">
       <PackagePath>Images\MoneyBackground.png</PackagePath>
-      <Modified>2014-11-13T21:35:32.228</Modified>
+      <Modified>2014-11-16T20:23:19.615</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="d:\SoftIT\CapitalQuizPro\CapitalQuiz\CapitalQuiz.Windows\bin\Debug\App.xbf">
+    <AppxPackagedFile Include="E:\GitHub\CapitalQuizPro\CapitalQuiz\CapitalQuiz.Shared\Images\QuestionBackground.png">
+      <PackagePath>Images\QuestionBackground.png</PackagePath>
+      <Modified>2014-11-16T21:27:08.415</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\GitHub\CapitalQuizPro\CapitalQuiz\CapitalQuiz.Shared\Images\ScoreBackground.png">
+      <PackagePath>Images\ScoreBackground.png</PackagePath>
+      <Modified>2014-11-16T20:41:10.187</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\GitHub\CapitalQuizPro\CapitalQuiz\CapitalQuiz.Windows\bin\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2014-11-13T21:47:12.783</Modified>
+      <Modified>2014-11-16T22:05:12.510</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="d:\SoftIT\CapitalQuizPro\CapitalQuiz\CapitalQuiz.Windows\bin\Debug\Controls\GameOverControl.xbf">
+    <AppxPackagedFile Include="E:\GitHub\CapitalQuizPro\CapitalQuiz\CapitalQuiz.Windows\bin\Debug\Controls\GameOverControl.xbf">
       <PackagePath>Controls\GameOverControl.xbf</PackagePath>
-      <Modified>2014-11-09T15:23:00.418</Modified>
+      <Modified>2014-11-16T22:45:25.294</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="d:\SoftIT\CapitalQuizPro\CapitalQuiz\CapitalQuiz.Windows\bin\Debug\Controls\HeaderControl.xbf">
+    <AppxPackagedFile Include="E:\GitHub\CapitalQuizPro\CapitalQuiz\CapitalQuiz.Windows\bin\Debug\Controls\HeaderControl.xbf">
       <PackagePath>Controls\HeaderControl.xbf</PackagePath>
-      <Modified>2014-11-13T21:47:12.785</Modified>
+      <Modified>2014-11-16T20:29:03.245</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="d:\SoftIT\CapitalQuizPro\CapitalQuiz\CapitalQuiz.Windows\bin\Debug\Dictionaries\ColorsDictionary.xbf">
+    <AppxPackagedFile Include="E:\GitHub\CapitalQuizPro\CapitalQuiz\CapitalQuiz.Windows\bin\Debug\Dictionaries\ButtonDictionary.xbf">
+      <PackagePath>Dictionaries\ButtonDictionary.xbf</PackagePath>
+      <Modified>2014-11-16T22:43:49.722</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\GitHub\CapitalQuizPro\CapitalQuiz\CapitalQuiz.Windows\bin\Debug\Dictionaries\ColorsDictionary.xbf">
       <PackagePath>Dictionaries\ColorsDictionary.xbf</PackagePath>
-      <Modified>2014-11-13T21:45:32.824</Modified>
+      <Modified>2014-11-16T22:09:06.066</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="d:\SoftIT\CapitalQuizPro\CapitalQuiz\CapitalQuiz.Windows\bin\Debug\Dictionaries\ContainerDictionary.xbf">
+    <AppxPackagedFile Include="E:\GitHub\CapitalQuizPro\CapitalQuiz\CapitalQuiz.Windows\bin\Debug\Dictionaries\ContainerDictionary.xbf">
       <PackagePath>Dictionaries\ContainerDictionary.xbf</PackagePath>
-      <Modified>2014-11-13T21:47:12.785</Modified>
+      <Modified>2014-11-16T22:43:49.722</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="d:\SoftIT\CapitalQuizPro\CapitalQuiz\CapitalQuiz.Windows\bin\Debug\Dictionaries\ListDictionary.xbf">
+    <AppxPackagedFile Include="E:\GitHub\CapitalQuizPro\CapitalQuiz\CapitalQuiz.Windows\bin\Debug\Dictionaries\ListDictionary.xbf">
       <PackagePath>Dictionaries\ListDictionary.xbf</PackagePath>
-      <Modified>2014-11-13T21:47:12.785</Modified>
+      <Modified>2014-11-16T20:29:03.245</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="d:\SoftIT\CapitalQuizPro\CapitalQuiz\CapitalQuiz.Windows\bin\Debug\Dictionaries\TextDictionary.xbf">
+    <AppxPackagedFile Include="E:\GitHub\CapitalQuizPro\CapitalQuiz\CapitalQuiz.Windows\bin\Debug\Dictionaries\TextDictionary.xbf">
       <PackagePath>Dictionaries\TextDictionary.xbf</PackagePath>
-      <Modified>2014-11-13T21:47:12.786</Modified>
+      <Modified>2014-11-16T22:45:25.294</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="d:\SoftIT\CapitalQuizPro\CapitalQuiz\CapitalQuiz.Windows\bin\Debug\Pages\TopListPage.xbf">
+    <AppxPackagedFile Include="E:\GitHub\CapitalQuizPro\CapitalQuiz\CapitalQuiz.Windows\bin\Debug\Pages\TopListPage.xbf">
       <PackagePath>Pages\TopListPage.xbf</PackagePath>
-      <Modified>2014-11-09T17:38:52.229</Modified>
+      <Modified>2014-11-16T20:29:03.246</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="d:\SoftIT\CapitalQuizPro\CapitalQuiz\CapitalQuiz.Windows\bin\Debug\MainPage.xbf">
+    <AppxPackagedFile Include="E:\GitHub\CapitalQuizPro\CapitalQuiz\CapitalQuiz.Windows\bin\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2014-11-13T21:47:12.783</Modified>
+      <Modified>2014-11-16T22:05:12.510</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="d:\SoftIT\CapitalQuizPro\CapitalQuiz\CapitalQuiz.Windows\bin\Debug\MenuPage.xbf">
+    <AppxPackagedFile Include="E:\GitHub\CapitalQuizPro\CapitalQuiz\CapitalQuiz.Windows\bin\Debug\MenuPage.xbf">
       <PackagePath>MenuPage.xbf</PackagePath>
-      <Modified>2014-11-09T15:23:00.418</Modified>
+      <Modified>2014-11-16T20:29:03.244</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="d:\SoftIT\CapitalQuizPro\CapitalQuiz\CapitalQuiz.Windows\bin\Debug\CapitalQuiz.Windows.xr.xml">
+    <AppxPackagedFile Include="E:\GitHub\CapitalQuizPro\CapitalQuiz\CapitalQuiz.Windows\bin\Debug\CapitalQuiz.Windows.xr.xml">
       <PackagePath>CapitalQuiz.Windows.xr.xml</PackagePath>
-      <Modified>2014-11-13T21:39:19.741</Modified>
+      <Modified>2014-11-16T21:59:43.091</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="d:\SoftIT\CapitalQuizPro\CapitalQuiz\CapitalQuiz.Windows\bin\Debug\resources.pri">
+    <AppxPackagedFile Include="E:\GitHub\CapitalQuizPro\CapitalQuiz\CapitalQuiz.Windows\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2014-11-13T21:45:33.784</Modified>
+      <Modified>2014-11-16T22:43:50.434</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

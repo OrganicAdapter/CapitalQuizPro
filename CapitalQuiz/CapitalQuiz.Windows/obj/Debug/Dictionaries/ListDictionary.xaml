@@ -3,5 +3,11 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:CapitalQuiz.Dictionaries">
     
+    <Style TargetType="ListView" x:Key="CenterListView">
+        <Setter Property="VerticalAlignment" Value="Center" />
+        <Setter Property="HorizontalAlignment" Value="Center" />
+        <Setter Property="SelectionMode" Value="None" />
+    </Style>
+    
 </ResourceDictionary>
 

@@ -28,14 +28,15 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="$(MSBuildThisFileDirectory)Converters\" />
-  </ItemGroup>
-  <ItemGroup>
     <Page Include="$(MSBuildThisFileDirectory)Controls\GameOverControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="$(MSBuildThisFileDirectory)Controls\HeaderControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)Dictionaries\ButtonDictionary.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -61,6 +62,9 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="$(MSBuildThisFileDirectory)Images\BonusBackground.png" />
     <Content Include="$(MSBuildThisFileDirectory)Images\MoneyBackground.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Images\QuestionBackground.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Images\ScoreBackground.png" />
   </ItemGroup>
 </Project>

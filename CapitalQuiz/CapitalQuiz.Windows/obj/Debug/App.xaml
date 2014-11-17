@@ -19,6 +19,7 @@
                 <ResourceDictionary Source="Dictionaries/ContainerDictionary.xaml" />
                 <ResourceDictionary Source="Dictionaries/TextDictionary.xaml" />
                 <ResourceDictionary Source="Dictionaries/ColorsDictionary.xaml" />
+                <ResourceDictionary Source="Dictionaries/ButtonDictionary.xaml" />
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>

@@ -1,4 +1,4 @@
-d:\SoftIT\CapitalQuizPro\CapitalQuiz\CapitalQuiz.Windows\CapitalQuiz.Windows.csproj;neutral
-d:\SoftIT\CapitalQuizPro\CapitalQuizPro\CapitalQuizPro.csproj;neutral
-d:\SoftIT\UniversalExtensions\UniversalExtensions.csproj;neutral
-d:\SoftIT\UniversalExtensions\UniversalExtensions.csproj;neutral
+E:\GitHub\CapitalQuizPro\CapitalQuiz\CapitalQuiz.Windows\CapitalQuiz.Windows.csproj;neutral
+E:\GitHub\CapitalQuizPro\CapitalQuizPro\CapitalQuizPro.csproj;neutral
+E:\GitHub\UniversalExtensions\UniversalExtensions.csproj;neutral
+E:\GitHub\UniversalExtensions\UniversalExtensions.csproj;neutral
