@@ -53,10 +53,10 @@ namespace CapitalQuizPro.ViewModels.Pages
         public bool IsAlive
         {
             get { return _isAlive; }
-            set 
-            { 
+            set
+            {
                 _isAlive = value;
-                RaisePropertyChanged(); 
+                RaisePropertyChanged();
             }
         }
 
@@ -163,7 +163,8 @@ namespace CapitalQuizPro.ViewModels.Pages
                 var selected = Question.AllAnswers.Where((x) => x.Text.Equals(answer)).FirstOrDefault();
                 selected.IsGoodAnswer = true;
 
-                Player.Score += (Time * QuestionNumber) / 10;
+                //Player.Score += (Time * QuestionNumber) / 10;
+                IncreaseScore((Time * QuestionNumber) / 10);
                 QuestionNumber++;
 
                 GetQuestion();
@@ -175,6 +176,7 @@ namespace CapitalQuizPro.ViewModels.Pages
             }
         }
 
+
         private void ExecuteSetFinished()
         {
             //Finish the game
@@ -183,7 +185,16 @@ namespace CapitalQuizPro.ViewModels.Pages
             _navigationService.Navigate("CapitalQuiz.Pages", "TopListPage", true);
         }
 
+        private async void IncreaseScore(int increase)
+        {
+            for (int i = 0; i < increase; i++)
+            {
+                Player.Score++;
+                await Task.Delay(50);
+            }
+        }
+
         #endregion //Methods
-                
+
     }
 }

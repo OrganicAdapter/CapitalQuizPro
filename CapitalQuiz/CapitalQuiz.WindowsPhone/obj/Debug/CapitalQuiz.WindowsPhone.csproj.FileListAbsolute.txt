@@ -88,3 +88,13 @@ d:\SoftIT\CapitalQuizPro\CapitalQuiz\CapitalQuiz.WindowsPhone\obj\Debug\Pages\To
 d:\SoftIT\CapitalQuizPro\CapitalQuiz\CapitalQuiz.WindowsPhone\obj\Debug\Pages\TopListPage.xbf
 d:\SoftIT\CapitalQuizPro\CapitalQuiz\CapitalQuiz.WindowsPhone\obj\Debug\Controls\HeaderControl.g.i.cs
 d:\SoftIT\CapitalQuizPro\CapitalQuiz\CapitalQuiz.WindowsPhone\obj\Debug\Controls\HeaderControl.g.cs
+d:\SoftIT\CapitalQuizPro\CapitalQuiz\CapitalQuiz.WindowsPhone\obj\Debug\Dictionaries\ButtonDictionary.g.i.cs
+d:\SoftIT\CapitalQuizPro\CapitalQuiz\CapitalQuiz.WindowsPhone\obj\Debug\Dictionaries\ButtonDictionary.g.cs
+d:\SoftIT\CapitalQuizPro\CapitalQuiz\CapitalQuiz.WindowsPhone\obj\Debug\Dictionaries\ColorsDictionary.g.i.cs
+d:\SoftIT\CapitalQuizPro\CapitalQuiz\CapitalQuiz.WindowsPhone\obj\Debug\Dictionaries\ColorsDictionary.g.cs
+d:\SoftIT\CapitalQuizPro\CapitalQuiz\CapitalQuiz.WindowsPhone\obj\Debug\Controls\HeaderControl.xaml
+d:\SoftIT\CapitalQuizPro\CapitalQuiz\CapitalQuiz.WindowsPhone\obj\Debug\Dictionaries\ButtonDictionary.xaml
+d:\SoftIT\CapitalQuizPro\CapitalQuiz\CapitalQuiz.WindowsPhone\obj\Debug\Dictionaries\ColorsDictionary.xaml
+d:\SoftIT\CapitalQuizPro\CapitalQuiz\CapitalQuiz.WindowsPhone\obj\Debug\Controls\HeaderControl.xbf
+d:\SoftIT\CapitalQuizPro\CapitalQuiz\CapitalQuiz.WindowsPhone\obj\Debug\Dictionaries\ButtonDictionary.xbf
+d:\SoftIT\CapitalQuizPro\CapitalQuiz\CapitalQuiz.WindowsPhone\obj\Debug\Dictionaries\ColorsDictionary.xbf

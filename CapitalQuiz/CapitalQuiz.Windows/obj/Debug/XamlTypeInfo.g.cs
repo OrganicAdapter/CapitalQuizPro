@@ -989,3 +989,5 @@ namespace CapitalQuiz.CapitalQuiz_Windows_XamlTypeInfo
 }
 
 
+
+

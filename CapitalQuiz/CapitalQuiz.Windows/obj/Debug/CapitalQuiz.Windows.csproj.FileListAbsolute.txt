@@ -202,3 +202,17 @@ e:\GitHub\CapitalQuizPro\CapitalQuiz\CapitalQuiz.Windows\obj\Debug\Dictionaries\
 e:\GitHub\CapitalQuizPro\CapitalQuiz\CapitalQuiz.Windows\obj\Debug\Dictionaries\ButtonDictionary.xaml
 e:\GitHub\CapitalQuizPro\CapitalQuiz\CapitalQuiz.Windows\obj\Debug\Dictionaries\ColorsDictionary.xbf
 e:\GitHub\CapitalQuizPro\CapitalQuiz\CapitalQuiz.Windows\obj\Debug\Dictionaries\TextDictionary.xbf
+d:\SoftIT\CapitalQuizPro\CapitalQuiz\CapitalQuiz.Windows\bin\Debug\Dictionaries\ButtonDictionary.xbf
+d:\SoftIT\CapitalQuizPro\CapitalQuiz\CapitalQuiz.Windows\obj\Debug\Dictionaries\ButtonDictionary.g.i.cs
+d:\SoftIT\CapitalQuizPro\CapitalQuiz\CapitalQuiz.Windows\obj\Debug\Dictionaries\ButtonDictionary.g.cs
+d:\SoftIT\CapitalQuizPro\CapitalQuiz\CapitalQuiz.Windows\obj\Debug\Dictionaries\ButtonDictionary.xaml
+d:\SoftIT\CapitalQuizPro\CapitalQuiz\CapitalQuiz.Windows\obj\Debug\Dictionaries\ButtonDictionary.xbf
+d:\SoftIT\CapitalQuizPro\CapitalQuiz\CapitalQuiz.Windows\obj\Debug\Dictionaries\ColorsDictionary.xbf
+d:\SoftIT\CapitalQuizPro\CapitalQuiz\CapitalQuiz.Windows\obj\Debug\Microsoft.Practices.ServiceLocation\layout.resfiles
+d:\SoftIT\CapitalQuizPro\CapitalQuiz\CapitalQuiz.Windows\obj\Debug\Microsoft.Practices.ServiceLocation\layout.resfiles.intermediate
+d:\SoftIT\CapitalQuizPro\CapitalQuiz\CapitalQuiz.Windows\obj\Debug\Microsoft.Practices.ServiceLocation\Resources.resfiles
+d:\SoftIT\CapitalQuizPro\CapitalQuiz\CapitalQuiz.Windows\obj\Debug\Microsoft.Practices.ServiceLocation\Resources.resfiles.intermediate
+d:\SoftIT\CapitalQuizPro\CapitalQuiz\CapitalQuiz.Windows\obj\Debug\Microsoft.Practices.ServiceLocation\pri.resfiles
+d:\SoftIT\CapitalQuizPro\CapitalQuiz\CapitalQuiz.Windows\obj\Debug\Microsoft.Practices.ServiceLocation\pri.resfiles.intermediate
+d:\SoftIT\CapitalQuizPro\CapitalQuiz\CapitalQuiz.Windows\obj\Debug\Microsoft.Practices.ServiceLocation\priconfig.xml
+d:\SoftIT\CapitalQuizPro\CapitalQuiz\CapitalQuiz.Windows\obj\Debug\Microsoft.Practices.ServiceLocation\priconfig.xml.intermediate

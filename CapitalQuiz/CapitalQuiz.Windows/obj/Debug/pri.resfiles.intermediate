@@ -1,6 +1,6 @@
 C:\Program Files (x86)\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\BehaviorsXamlSDKManaged\12.0\Redist\CommonConfiguration\Neutral\Microsoft.Xaml.Interactions.pri
 C:\Program Files (x86)\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\BehaviorsXamlSDKManaged\12.0\Redist\CommonConfiguration\Neutral\Microsoft.Xaml.Interactivity.pri
-E:\GitHub\CapitalQuizPro\CapitalQuizPro\bin\Debug\CapitalQuizPro.pri
-E:\GitHub\CapitalQuizPro\packages\MvvmLightLibs.5.0.2.0\lib\netcore451\GalaSoft.MvvmLight.Platform.pri
-E:\GitHub\UniversalExtensions\bin\Debug\UniversalExtensions.pri
-E:\GitHub\CapitalQuizPro\CapitalQuiz\CapitalQuiz.Windows\obj\Debug\Microsoft.Practices.ServiceLocation.pri
+d:\SoftIT\CapitalQuizPro\CapitalQuizPro\bin\Debug\CapitalQuizPro.pri
+d:\SoftIT\CapitalQuizPro\packages\MvvmLightLibs.5.0.2.0\lib\netcore451\GalaSoft.MvvmLight.Platform.pri
+d:\SoftIT\UniversalExtensions\bin\Debug\UniversalExtensions.pri
+d:\SoftIT\CapitalQuizPro\CapitalQuiz\CapitalQuiz.Windows\obj\Debug\Microsoft.Practices.ServiceLocation.pri
