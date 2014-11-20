@@ -10,6 +10,6 @@ namespace CapitalQuizPro.Models.Interfaces
     public interface ITopListService
     {
         Task<List<TopListItem>> GetTopList();
-        Task<List<TopListItem>> Add(string userName, int score);
+        Task<int> Add(string userName, int score);
     }
 }

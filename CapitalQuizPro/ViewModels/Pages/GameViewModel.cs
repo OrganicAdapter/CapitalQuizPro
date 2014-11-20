@@ -182,7 +182,7 @@ namespace CapitalQuizPro.ViewModels.Pages
             //Finish the game
             Timer.Stop();
             _gameService.SetFinished(Player.PlayerId, Player.Score);
-            _navigationService.Navigate("CapitalQuiz.Pages", "TopListPage", true);
+            _navigationService.Navigate("CapitalQuiz", "MenuPage", Player);
         }
 
         private async void IncreaseScore(int increase)

@@ -30,12 +30,18 @@ namespace CapitalQuizPro.ViewModels.Pages
             set { _topList = value; RaisePropertyChanged(); }
         }
 
+        private int _place;
+        public int Place
+        {
+            get { return _place; }
+            set { _place = value; RaisePropertyChanged(); }
+        }
 
-        private bool IsUserAttached { get; set; }
+
+        private PlayerViewModel Player { get; set; }
 
 
         public RelayCommand Init { get; set; }
-        public RelayCommand Add { get; set; }
 
         #endregion //Properties
 
@@ -46,7 +52,6 @@ namespace CapitalQuizPro.ViewModels.Pages
             _topListService = topListService;
 
             Init = new RelayCommand(ExecuteInit);
-            Add = new RelayCommand(ExecuteAdd);
 
             (Window.Current.Content as Frame).Navigated += Navigated;
         }
@@ -57,7 +62,7 @@ namespace CapitalQuizPro.ViewModels.Pages
 
         private async void ExecuteInit()
         {
-            if (!IsUserAttached)
+            if (Player == null)
             {
                 var list = await _topListService.GetTopList();
                 var items = new List<TopListItemViewModel>();
@@ -69,7 +74,8 @@ namespace CapitalQuizPro.ViewModels.Pages
             }
             else
             { 
-                var list = await _topListService.Add("Geri", 0);
+                var place = await _topListService.Add(Player.UserName, Player.Score);
+                var list = await _topListService.GetTopList();
                 var items = new List<TopListItemViewModel>();
 
                 foreach (var item in list)
@@ -79,24 +85,20 @@ namespace CapitalQuizPro.ViewModels.Pages
             }
         }
 
-        private async void ExecuteAdd()
-        { 
-            var list = await _topListService.Add("Geri", 0);
-
-            var items = new List<TopListItemViewModel>();
-
-            foreach (var item in list)
-                items.Add(TopListConnector.ConvertToViewModel(item));
-
-            TopList = items;
-        }
-
         private void Navigated(object sender, Windows.UI.Xaml.Navigation.NavigationEventArgs e)
         {
-            if (e.Parameter != null)
-                IsUserAttached = true;
-            else
-                IsUserAttached = false;
+            try
+            {
+                if (e.Parameter != null)
+                    Player = (PlayerViewModel)e.Parameter;
+                else
+                    Player = null;
+            }
+
+            catch (InvalidCastException)
+            {
+                Player = null;
+            }
         }
 
         #endregion //Methods

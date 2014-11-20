@@ -21,11 +21,14 @@
     <Compile Include="$(MSBuildThisFileDirectory)Controls\HeaderControl.xaml.cs">
       <DependentUpon>HeaderControl.xaml</DependentUpon>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Controls\StoreControl.xaml.cs">
+      <DependentUpon>StoreControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Controls\TopListControl.xaml.cs">
+      <DependentUpon>TopListControl.xaml</DependentUpon>
+    </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Implementations\TypeService.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Injection\InjectionService.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Pages\TopListPage.xaml.cs">
-      <DependentUpon>TopListPage.xaml</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Include="$(MSBuildThisFileDirectory)Controls\GameOverControl.xaml">
@@ -33,6 +36,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="$(MSBuildThisFileDirectory)Controls\HeaderControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)Controls\StoreControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)Controls\TopListControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -56,15 +67,14 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="$(MSBuildThisFileDirectory)Pages\TopListPage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
   </ItemGroup>
   <ItemGroup>
     <Content Include="$(MSBuildThisFileDirectory)Images\BonusBackground.png" />
     <Content Include="$(MSBuildThisFileDirectory)Images\MoneyBackground.png" />
     <Content Include="$(MSBuildThisFileDirectory)Images\QuestionBackground.png" />
     <Content Include="$(MSBuildThisFileDirectory)Images\ScoreBackground.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)Pages\" />
   </ItemGroup>
 </Project>

@@ -23,13 +23,13 @@ namespace CapitalQuizPro.Models.Implementations
 
                 TopList = await JsonSerializer.Deserialize<List<TopListItem>>(listjson);
                 
-                return TopList;
+                return TopList.OrderBy((x) => x.Place).ToList();
             }
             else
                 return new List<TopListItem>();
         }
 
-        public async Task<List<TopListItem>> Add(string userName, int score)
+        public async Task<int> Add(string userName, int score)
         {
             if (TopList == null)
             {
@@ -43,10 +43,40 @@ namespace CapitalQuizPro.Models.Implementations
                     TopList = new List<TopListItem>();
             }
 
-            TopList.Add(new TopListItem(userName, score, TopList.Count));
-            ApplicationData.Current.LocalSettings.Values["TopList"] = await JsonSerializer.Serialize(TopList);
+            var place = 0;
 
-            return TopList;
+            if (TopList.Count == 0)
+            {
+                var item = new TopListItem(userName, score, 1);
+                TopList.Add(item);
+                ApplicationData.Current.LocalSettings.Values["TopList"] = await JsonSerializer.Serialize(TopList);
+
+                return 1;
+            }
+            else
+            {
+                foreach (var player in TopList)
+                {
+                    if (place == 0)
+                    {
+                        if (player.Score < score)
+                        {
+                            place = player.Place;
+                            player.Place++;
+                        }
+                    }
+                    else
+                    {
+                        player.Place++;
+                    }
+                }
+
+                var item = new TopListItem(userName, score, place);
+                TopList.Add(item);
+                ApplicationData.Current.LocalSettings.Values["TopList"] = await JsonSerializer.Serialize(TopList);
+
+                return place;
+            }
         }
     }
 }

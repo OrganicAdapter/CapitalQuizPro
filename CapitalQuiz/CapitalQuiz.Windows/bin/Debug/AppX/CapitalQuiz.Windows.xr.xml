@@ -19,8 +19,10 @@
     <RootPropertyPathName Name="Money" />
     <RootPropertyPathName Name="UserName" />
     <RootPropertyPathName Name="ProfileImage" />
+    <RootPropertyPathName Name="Breaks" />
     <RootPropertyPathName Name="TopList" />
     <RootPropertyPathName Name="Name" />
+    <RootPropertyPathName Name="Place" />
   </Roots.PropertyPathNames>
   <Roots.RootTypes>
     <RootType FullName="Windows.UI.Xaml.Application">
@@ -104,12 +106,15 @@
       <RootProperty Name="Style" />
     </RootType>
     <RootType FullName="CapitalQuiz.MainPage" />
+    <RootType FullName="CapitalQuiz.Controls.StoreControl" />
+    <RootType FullName="CapitalQuiz.Controls.TopListControl" />
     <RootType FullName="Microsoft.Xaml.Interactions.Core.NavigateToPageAction">
       <RootProperty Name="TargetPage" />
     </RootType>
     <RootType FullName="CapitalQuiz.MenuPage" />
     <RootType FullName="Windows.UI.Xaml.Controls.UserControl">
       <RootProperty Name="Content" />
+      <RootProperty Name="DataContext" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.StackPanel">
       <RootProperty Name="DataContext" />
@@ -118,6 +123,13 @@
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Image">
       <RootProperty Name="Source" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ListView">
+      <RootProperty Name="ItemsSource" />
+      <RootProperty Name="ItemTemplate" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.DataTemplate">
+      <RootProperty Name="Template" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Control">
       <RootProperty Name="Background" />
@@ -145,17 +157,8 @@
       <RootProperty Name="ImageSource" />
       <RootProperty Name="Stretch" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.ListView">
-      <RootProperty Name="ItemsSource" />
-      <RootProperty Name="Style" />
-      <RootProperty Name="ItemTemplate" />
-    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ListViewBase">
       <RootProperty Name="SelectionMode" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.DataTemplate">
-      <RootProperty Name="Template" />
-    </RootType>
-    <RootType FullName="CapitalQuiz.Pages.TopListPage" />
   </Roots.RootTypes>
 </Roots>

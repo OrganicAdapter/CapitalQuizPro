@@ -124,7 +124,7 @@ namespace CapitalQuiz.CapitalQuiz_Windows_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[27];
+            _typeNameTable = new string[28];
             _typeNameTable[0] = "CapitalQuiz.Injection.InjectionService";
             _typeNameTable[1] = "Object";
             _typeNameTable[2] = "CapitalQuizPro.ViewModels.Pages.MenuViewModel";
@@ -149,11 +149,12 @@ namespace CapitalQuiz.CapitalQuiz_Windows_XamlTypeInfo
             _typeNameTable[21] = "CapitalQuiz.Controls.GameOverControl";
             _typeNameTable[22] = "CapitalQuiz.MainPage";
             _typeNameTable[23] = "Windows.UI.Xaml.Controls.Page";
-            _typeNameTable[24] = "Microsoft.Xaml.Interactions.Core.NavigateToPageAction";
-            _typeNameTable[25] = "CapitalQuiz.MenuPage";
-            _typeNameTable[26] = "CapitalQuiz.Pages.TopListPage";
+            _typeNameTable[24] = "CapitalQuiz.Controls.StoreControl";
+            _typeNameTable[25] = "CapitalQuiz.Controls.TopListControl";
+            _typeNameTable[26] = "Microsoft.Xaml.Interactions.Core.NavigateToPageAction";
+            _typeNameTable[27] = "CapitalQuiz.MenuPage";
 
-            _typeTable = new global::System.Type[27];
+            _typeTable = new global::System.Type[28];
             _typeTable[0] = typeof(global::CapitalQuiz.Injection.InjectionService);
             _typeTable[1] = typeof(global::System.Object);
             _typeTable[2] = typeof(global::CapitalQuizPro.ViewModels.Pages.MenuViewModel);
@@ -178,9 +179,10 @@ namespace CapitalQuiz.CapitalQuiz_Windows_XamlTypeInfo
             _typeTable[21] = typeof(global::CapitalQuiz.Controls.GameOverControl);
             _typeTable[22] = typeof(global::CapitalQuiz.MainPage);
             _typeTable[23] = typeof(global::Windows.UI.Xaml.Controls.Page);
-            _typeTable[24] = typeof(global::Microsoft.Xaml.Interactions.Core.NavigateToPageAction);
-            _typeTable[25] = typeof(global::CapitalQuiz.MenuPage);
-            _typeTable[26] = typeof(global::CapitalQuiz.Pages.TopListPage);
+            _typeTable[24] = typeof(global::CapitalQuiz.Controls.StoreControl);
+            _typeTable[25] = typeof(global::CapitalQuiz.Controls.TopListControl);
+            _typeTable[26] = typeof(global::Microsoft.Xaml.Interactions.Core.NavigateToPageAction);
+            _typeTable[27] = typeof(global::CapitalQuiz.MenuPage);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -228,9 +230,10 @@ namespace CapitalQuiz.CapitalQuiz_Windows_XamlTypeInfo
         private object Activate_19_HeaderControl() { return new global::CapitalQuiz.Controls.HeaderControl(); }
         private object Activate_21_GameOverControl() { return new global::CapitalQuiz.Controls.GameOverControl(); }
         private object Activate_22_MainPage() { return new global::CapitalQuiz.MainPage(); }
-        private object Activate_24_NavigateToPageAction() { return new global::Microsoft.Xaml.Interactions.Core.NavigateToPageAction(); }
-        private object Activate_25_MenuPage() { return new global::CapitalQuiz.MenuPage(); }
-        private object Activate_26_TopListPage() { return new global::CapitalQuiz.Pages.TopListPage(); }
+        private object Activate_24_StoreControl() { return new global::CapitalQuiz.Controls.StoreControl(); }
+        private object Activate_25_TopListControl() { return new global::CapitalQuiz.Controls.TopListControl(); }
+        private object Activate_26_NavigateToPageAction() { return new global::Microsoft.Xaml.Interactions.Core.NavigateToPageAction(); }
+        private object Activate_27_MenuPage() { return new global::CapitalQuiz.MenuPage(); }
         private void VectorAdd_10_BehaviorCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Windows.UI.Xaml.DependencyObject>)instance;
@@ -403,24 +406,31 @@ namespace CapitalQuiz.CapitalQuiz_Windows_XamlTypeInfo
                 xamlType = new global::CapitalQuiz.CapitalQuiz_Windows_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 24:   //  Microsoft.Xaml.Interactions.Core.NavigateToPageAction
+            case 24:   //  CapitalQuiz.Controls.StoreControl
+                userType = new global::CapitalQuiz.CapitalQuiz_Windows_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
+                userType.Activator = Activate_24_StoreControl;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 25:   //  CapitalQuiz.Controls.TopListControl
+                userType = new global::CapitalQuiz.CapitalQuiz_Windows_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
+                userType.Activator = Activate_25_TopListControl;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 26:   //  Microsoft.Xaml.Interactions.Core.NavigateToPageAction
                 userType = new global::CapitalQuiz.CapitalQuiz_Windows_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
-                userType.Activator = Activate_24_NavigateToPageAction;
+                userType.Activator = Activate_26_NavigateToPageAction;
                 userType.AddMemberName("TargetPage");
                 userType.AddMemberName("Parameter");
                 xamlType = userType;
                 break;
 
-            case 25:   //  CapitalQuiz.MenuPage
+            case 27:   //  CapitalQuiz.MenuPage
                 userType = new global::CapitalQuiz.CapitalQuiz_Windows_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_25_MenuPage;
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 26:   //  CapitalQuiz.Pages.TopListPage
-                userType = new global::CapitalQuiz.CapitalQuiz_Windows_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_26_TopListPage;
+                userType.Activator = Activate_27_MenuPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -987,7 +997,5 @@ namespace CapitalQuiz.CapitalQuiz_Windows_XamlTypeInfo
         }
     }
 }
-
-
 
 

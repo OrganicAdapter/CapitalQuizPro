@@ -10,6 +10,8 @@ App.xbf
 CapitalQuiz.Windows.xr.xml
 Controls\GameOverControl.xbf
 Controls\HeaderControl.xbf
+Controls\StoreControl.xbf
+Controls\TopListControl.xbf
 Dictionaries\ButtonDictionary.xbf
 Dictionaries\ColorsDictionary.xbf
 Dictionaries\ContainerDictionary.xbf
@@ -17,4 +19,3 @@ Dictionaries\ListDictionary.xbf
 Dictionaries\TextDictionary.xbf
 MainPage.xbf
 MenuPage.xbf
-Pages\TopListPage.xbf

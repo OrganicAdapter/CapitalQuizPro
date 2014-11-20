@@ -89,6 +89,12 @@
     <AppxPackagedFile Include="d:\SoftIT\CapitalQuizPro\CapitalQuiz\CapitalQuiz.Windows\bin\Debug\Controls\HeaderControl.xbf">
       <PackagePath>Controls\HeaderControl.xbf</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="d:\SoftIT\CapitalQuizPro\CapitalQuiz\CapitalQuiz.Windows\bin\Debug\Controls\StoreControl.xbf">
+      <PackagePath>Controls\StoreControl.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="d:\SoftIT\CapitalQuizPro\CapitalQuiz\CapitalQuiz.Windows\bin\Debug\Controls\TopListControl.xbf">
+      <PackagePath>Controls\TopListControl.xbf</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="d:\SoftIT\CapitalQuizPro\CapitalQuiz\CapitalQuiz.Windows\bin\Debug\Dictionaries\ButtonDictionary.xbf">
       <PackagePath>Dictionaries\ButtonDictionary.xbf</PackagePath>
     </AppxPackagedFile>
@@ -103,9 +109,6 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="d:\SoftIT\CapitalQuizPro\CapitalQuiz\CapitalQuiz.Windows\bin\Debug\Dictionaries\TextDictionary.xbf">
       <PackagePath>Dictionaries\TextDictionary.xbf</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="d:\SoftIT\CapitalQuizPro\CapitalQuiz\CapitalQuiz.Windows\bin\Debug\Pages\TopListPage.xbf">
-      <PackagePath>Pages\TopListPage.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="d:\SoftIT\CapitalQuizPro\CapitalQuiz\CapitalQuiz.Windows\bin\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
